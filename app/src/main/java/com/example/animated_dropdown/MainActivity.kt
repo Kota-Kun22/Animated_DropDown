@@ -77,6 +77,8 @@ fun DropDown(text:String,
     )
     val RotateX = animateFloatAsState(
         targetValue = if(isOpen)0f else -90f,
+        /* here 0 represent no rotation  where as
+        -90f represents a 90 degree clockwise around the x axis*/
         animationSpec = tween(durationMillis = 300), label = ""
     )
     Column(modifier=Modifier.fillMaxWidth()) {
